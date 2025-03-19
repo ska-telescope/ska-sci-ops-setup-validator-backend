@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "ska_ost_setup_validator"
+version = "0.0.0"
+description = "SKA Low and Mid telescope setup validator backend"
+authors = ["SKAO Science Operations <sciops@skao.int>"]
+maintainers = ["Sarrvesh Sridhar"]
+license = "BSD"
+readme = "README.md"
+repository = "https://github.com/ska-sci-ops/prototype_setup_validator_backend"
+keywords = [""]
+packages = [
+    { include = "ska_ost_setup_validator", from = "src" },
+]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[[tool.poetry.source]]
+name = 'ska-nexus'
+url = 'https://artefact.skao.int/repository/pypi-internal/simple'
+
+[[tool.poetry.source]]
+name = "PyPI-public"
+url = 'https://pypi.org/simple'
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+uvicorn = { extras = ["standard"], version = "^0.25.0" }
+pydantic = "*"
+pydantic-core = "*"
+typing-extensions = "*"
+annotated-types = "*"
+anyio = "*"
+starlette = "*"
+httpx = "*"
+
+[tool.poetry.dev-dependencies]
+isort = "*"
+black = "^23"
+flake8 = "*"
+setuptools = "*"
+ipython = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

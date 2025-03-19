@@ -1,0 +1,7 @@
+---
+apiVersion: v2
+appVersion: 0.0.0
+description: A Helm chart to test the ska-cicd-makefile
+home: https://gitlab.com/ska-telescope/ska-cicd-makefile
+name: ska-cicd-makefile-test
+version: 0.0.0
