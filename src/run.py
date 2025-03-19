@@ -3,10 +3,10 @@ from typing import Dict
 
 import uvicorn
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from ska_ost_setup_validator import validate
-from fastapi.middleware.cors import CORSMiddleware
+from ska_sci_ops_setup_validator import validate
 
 
 class ModeSettings(BaseModel):

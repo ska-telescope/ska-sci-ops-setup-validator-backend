@@ -1,19 +1,22 @@
 [tool.poetry]
-name = "ska_ost_setup_validator"
+name = "ska-sci-ops-setup-validator"
 version = "0.0.0"
 description = "SKA Low and Mid telescope setup validator backend"
 authors = ["SKAO Science Operations <sciops@skao.int>"]
-maintainers = ["Sarrvesh Sridhar"]
+maintainers = ["Sarrvesh Sridhar & Danny Price"]
 license = "BSD"
 readme = "README.md"
 repository = "https://github.com/ska-sci-ops/prototype_setup_validator_backend"
-keywords = [""]
+keywords = ["SKA Low and Mid Setup Validator"]
 packages = [
     { include = "ska_ost_setup_validator", from = "src" },
 ]
+include = [
+    { path = 'tests'}
+]
 
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 1 - Planning",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: BSD License",
     "Natural Language :: English",
@@ -45,6 +48,11 @@ httpx = "*"
 isort = "*"
 black = "^23"
 flake8 = "*"
+pylint = "*"
+pylint_junit = "*"
+pytest = "^7.4"
+pytest-cov = "^3.0"
+coverage = "*"
 setuptools = "*"
 ipython = "*"
 
