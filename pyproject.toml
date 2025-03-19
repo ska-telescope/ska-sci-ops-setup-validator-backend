@@ -9,7 +9,7 @@ readme = "README.md"
 repository = "https://github.com/ska-sci-ops/prototype_setup_validator_backend"
 keywords = ["SKA Low and Mid Setup Validator"]
 packages = [
-    { include = "ska_ost_setup_validator", from = "src" },
+    { include = "ska_sci_ops_setup_validator", from = "src" },
 ]
 include = [
     { path = 'tests'}
