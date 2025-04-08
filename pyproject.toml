@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ska-sci-ops-setup-validator"
-version = "0.0.0"
+version = "0.0.1"
 description = "SKA Low and Mid telescope setup validator backend"
 authors = ["SKAO Science Operations <sciops@skao.int>"]
 maintainers = ["Sarrvesh Sridhar & Danny Price"]
