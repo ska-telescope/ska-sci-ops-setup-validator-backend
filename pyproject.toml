@@ -34,7 +34,7 @@ url = 'https://pypi.org/simple'
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = "^0.115.0"
+fastapi = {extras=["all"], version = "^0.115.0" }
 uvicorn = { extras = ["standard"], version = "^0.25.0" }
 pydantic = "*"
 pydantic-core = "*"

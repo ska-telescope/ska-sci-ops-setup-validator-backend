@@ -1,5 +1,20 @@
-include .make/base.mk
+# include OCI Images support
+include .make/oci.mk
+
+# include k8s support
+include .make/k8s.mk
+
+# include Helm Chart support
+include .make/helm.mk
+
+# Include Python support
 include .make/python.mk
+
+# include raw support
+include .make/raw.mk
+
+# include core make support
+include .make/base.mk
 
 # unset defaults so settings in pyproject.toml take effect
 PYTHON_LINE_LENGTH = 88
