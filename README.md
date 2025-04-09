@@ -20,13 +20,13 @@ If you update the dependencies in `pyproject.toml`, make sure to run `poetry upd
 ## Running the server
 
 ```bash
-uvicorn src.run:app --reload --host 127.0.0.1 --port 8001
+uvicorn src.ska_sci_ops_setup_validator.run:app --reload --host 127.0.0.1 --port 8001
 ```
 
 You can use `curl` to test locally as shown below:
 
 ```bash
-curl -X POST "http://127.0.0.1:8001/process/" -H "Content-Type: application/json" -d '{
+curl -X POST "http://127.0.0.1:8001/validate/" -H "Content-Type: application/json" -d '{
   "context": "Cycle 0",
   "telescopeType": "SKA-Mid",
   "subarrays": {
