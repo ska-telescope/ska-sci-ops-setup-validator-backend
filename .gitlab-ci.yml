@@ -13,9 +13,9 @@ stages:
   - lint
   - build
   - test
-  #- deploy
-  #- integration
-  #- staging
+  - deploy
+  - integration
+  - staging
   - publish
   - scan
 
